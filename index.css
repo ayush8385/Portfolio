@@ -564,3 +564,10 @@ body {
     }
 
 }
+
+
+@media screen and (max-height:800px){
+    #name-social-container {
+        margin-top: -53vh;
+    }
+}
