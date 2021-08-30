@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=500, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <script>
+
+function myFunction() {
+  document.getElementsByClassName('container')[0].classList.toggle("change");
+  if(document.getElementsByClassName('mobile_nav')[0].style.visibility == 'visible'){
+    document.getElementsByClassName('mobile_nav')[0].style.visibility = 'hidden';
+  }
+  else{
+    document.getElementsByClassName('mobile_nav')[0].style.visibility = 'visible'
+  }
+}
+
+// function hidemobilemenu(){
+//     if(document.getElementsByClassName('mobile_nav')[0].style.visibility == 'hidden'){
+//         document.getElementsByClassName('container')[0].classList.toggle("change");
+//     document.getElementsByClassName('container')[0].classList.toggle("change");
+
+//     }
+//     document.getElementsByClassName('mobile_nav')[0].style.visibility = 'hidden';
+// }
+
+    </script>
+    
+</head>
+<body>
+
+    <div class="container" onclick="myFunction()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <div class="mobile_nav">
+        <nav>
+            <ul class="mob-horizontal-list text-center nav-menu">
+                <li onclick="myFunction()">
+                    <a href="#"> Home </a>
+                </li>
+                <li onclick="myFunction()">
+                    <a href="#about"> About </a>
+                </li>
+                <li onclick="myFunction()">
+                    <a href="#skills"> Skills </a>
+                </li>
+                <li onclick="myFunction()">
+                    <a href="#experience">Experience</a>
+                </li>
+                <li onclick="myFunction()">
+                    <a href="#education">Education</a>
+                </li>
+                <li onclick="myFunction()">
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li onclick="myFunction()">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            
+        </nav>
+    </div>
+
+
+    <header id="body-header"> 
+        
+        <nav class="desk_nav">
+            <ul class="horizontal-list text-center nav-menu">
+                <li>
+                    <a href="#"> Home </a>
+                </li>
+                <li>
+                    <a href="#about"> About </a>
+                </li>
+                <li>
+                    <a href="#skills"> Skills </a>
+                </li>
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            
+        </nav>
+
+        <div id="name-social-container">
+
+            <div class="text-center">
+                <h1 id="my-name">
+                    Ayush Mishra
+                </h1>
+            </div>
+
+            <div>
+                <ul class="text-center social-icons">
+                    <li>
+                        <a href="#">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000015_1549330433_linkedin-logo.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000022_1549822879_stackoverflow-logo.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000023_1549823282_google-plus-logo.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000014_1549330414_facebook-logo.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000021_1549822861_quora-logo.png" alt="" />
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+    
+
+    <main>
+
+        <section id="about">
+            <div id="my-image">  </div>
+            <div class="abt">
+                <p>Hi I'm Ayush Mishra I'm currently pursuing my BE from Chitkara University in Computer Science and Engineering and practiced a new skills like Android Developing, Web Developer, Competitive Programmer .<br>Self-motivated and hardworking fresher seeking for an opportunity to work in a challenging environment to prove my skills and utilize my knowledge & intelligence in the growth of the organization.<br>Wish to begin my career as a good Software Engineer by working on challenging projects. Further want to deal with each and every aspect and work related to Computer Engineering. At the end of the day I want to be a satisfied Software Engineer.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+           <p>SKILLS</p>
+           <div class="skills-display">
+               
+               <div class="skill-progress">
+                   <div class="eighty-five">
+                      <div class="skill-name">
+                         <span>C++</span>
+                      </div>
+                   </div>
+               </div>
+               <div class="skill-progress">
+                <div class="ninty">
+                   <div class="skill-name">
+                      <span>Kotlin</span>
+                   </div>
+                </div>
+            </div>
+            <div class="skill-progress">
+                <div class="fifty">
+                   <div class="skill-name">
+                      <span>Java</span>
+                   </div>
+                </div>
+            </div>
+            <div class="skill-progress">
+                <div class="seventy-five">
+                   <div class="skill-name">
+                      <span>HTML</span>
+                   </div>
+                </div>
+            </div>
+            <div class="skill-progress">
+                <div class="ninty">
+                   <div class="skill-name">
+                      <span>CSS</span>
+                   </div>
+                </div>
+            </div>
+
+            <div class="skill-progress">
+                <div class="fifty">
+                   <div class="skill-name">
+                      <span>Android</span>
+                   </div>
+                </div>
+            </div>
+
+            <div class="skill-progress">
+                <div class="ninty">
+                   <div class="skill-name">
+                      <span>JavaScript</span>
+                   </div>
+                </div>
+            </div>
+
+           </div>
+
+           
+
+        </section>
+
+        <section id="experience">
+            <p>WORK EXPERIENCE</p>
+            <div id="exp">
+                <div class="exp_box">
+                    
+                        <!-- <img src="educat.jpg" id="image_wrk"> -->
+                        <p id="designation">Android Developer</p>
+                        <p id="company">My Digital Dudes(MDD)</p>
+                        <p id="status">June 2021 - Present</p>
+                        <p id="work">	
+                            Worked with team of 4 members and provided end-to-end solutions for clients
+                            Lead developer in 3 key projects of major clients</p>
+                    
+                   
+                </div>
+                <div class="exp_box">
+                    <!-- <div>
+                        <img src="educat.jpg" id="image_wrk">
+                    </div> -->
+                    <div>
+                        <p id="designation">Android Developer</p>
+                        <p id="company">Google DSC Club)</p>
+                        <p id="status">March 2020 - Present</p>
+                        <p id="work">Completed 10+ successfull projects with 8-10 members in Google Developer Student Club and made live on PlayStore</p>
+                    </div>
+                </div>
+                <div class="exp_box">
+                    <!-- <div>
+                        <img src="educat.jpg" id="image_wrk">
+                    </div> -->
+                    <div>
+                        <p id="designation">Android Developer</p>
+                        <p id="company">My Digital Dudes(MDD)</p>
+                        <p id="status">June 2021 - Present</p>
+                        <p id="work">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ab fugit delectus maiores laborum voluptatum nisi ad, excepturi tempora, saepe eos reiciendis soluta autem sunt veritatis cupiditate, quam non doloremque.</p>
+                    </div>
+                </div>
+                <div class="exp_box">
+                    <!-- <div>
+                        <img src="educat.jpg" id="image_wrk">
+                    </div> -->
+                    <div>
+                        <p id="designation">Android Developer</p>
+                        <p id="company">My Digital Dudes(MDD)</p>
+                        <p id="status">June 2021 - Present</p>
+                        <p id="work">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ab fugit delectus maiores laborum voluptatum nisi ad, excepturi tempora, saepe eos reiciendis soluta autem sunt veritatis cupiditate, quam non doloremque.</p>
+                    </div>
+                </div>
+
+                
+                <div class="divider">
+                    <div class="plane">
+                        <i class="fa fa-plane" aria-hidden="true"></i>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </section>
+
+        <section id="experience">
+            <p>EDUCATION</p>
+            <div id="exp">
+                <div class="exp_box">
+                    
+                        <!-- <img src="educat.jpg" id="image_wrk"> -->
+                        <p id="designation">Xth</p>
+                        <p id="company">Central Academy</p>
+                        <p id="status">2016 - 2017</p>
+                        <p id="work">CGPA: 8.6</p>
+                   
+                </div>
+                <div class="exp_box">
+                    <!-- <div>
+                        <img src="educat.jpg" id="image_wrk">
+                    </div> -->
+                    <div>
+                        <p id="designation">XIIth</p>
+                        <p id="company">Divine Public School</p>
+                        <p id="status">2017 - 2018</p>
+                        <p id="work">Percentage: 79</p>
+                   </div>
+                </div>
+                <div class="exp_box">
+                    <!-- <div>
+                        <img src="educat.jpg" id="image_wrk">
+                    </div> -->
+                    <div>
+                        <p id="designation">Chitkara University</p>
+                        <p id="company">UnderGrad</p>
+                        <p id="status">2019 - Present</p>
+                        <p id="work">I am Currently pursuing my Bachelor of Engineering(BE) in Computer Science and Engineering</p>
+                    </div>
+                </div>
+            
+
+                
+                <div class="divider">
+                    <div class="plane">
+                        <i class="fa fa-car" style="transform: rotate(-135deg); margin-left: -5px;" aria-hidden="true"></i>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <section id="portfolio">
+
+        </section>
+
+        <section id="contact">
+            <p>Contact</p>
+           <div class="cons-display">
+               <div class="input_form">
+                   <form>
+                       <input type="text" placeholder="Your Name"><br>
+                       <input type="email" placeholder="Your Email"><br>
+                       <textarea placeholder="Message"></textarea>
+                   </form>
+                   <button type="submit">SEND MESSAGE</button>
+               </div>
+               <hr>
+               <div class="address">
+                   <p class="title">Get In touch</p>
+                   <p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam laudantium illo animi mollitia distinctio rerum velit ullam consectetur perspiciatis veritatis ab ipsam ratione, provident odit eligendi eius repudiandae ut itaque!</p>
+                   <p class="title">My Address</p>
+                   <div class="add">
+                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                    <p id="content">Delhi,India</p>
+                   </div>
+                   <div class="add">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <p id="content">8853009697</p>
+                   </div>
+                   <div class="add">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    <p id="content">am838578@gmail.com</p>
+                   </div>  
+               </div>
+           </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
