@@ -107,9 +107,6 @@ body {
 
 /* Name and Social Icons*/
 
-#name-social-container {
-    margin-top: 20vh;
-}
 
 #my-name {
     font-size: 3rem;
@@ -565,8 +562,15 @@ body {
 
 }
 
-@media screen and (max-height:750px){
-    #name-social-container {
-        margin-top: -43vh;
+#name-social-container{
+    margin-top: 10vh;
+    
+}
+
+@media screen and (max-height:700px) {
+    
+    #name-social-container{
+        margin-top: -40vh;
+        
     }
 }
