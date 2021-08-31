@@ -639,11 +639,14 @@ body {
     
 }
 
-@media screen and (max-height:700px) {
+@media screen and (max-height:630px) {
     
     #name-social-container{
         margin-top: -40vh;
         
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5f9e1ad2e3b90918be3205c17752f64423cd6c82
