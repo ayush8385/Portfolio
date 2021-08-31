@@ -7,18 +7,30 @@
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    
+
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
     <script>
 
+        
+
 function myFunction() {
   document.getElementsByClassName('container')[0].classList.toggle("change");
   if(document.getElementsByClassName('mobile_nav')[0].style.visibility == 'visible'){
     document.getElementsByClassName('mobile_nav')[0].style.visibility = 'hidden';
+    const element = document.querySelector('.mobile_nav');
+    element.classList.remove('animate__animated', 'animate__bounceIn');
+    
   }
   else{
     document.getElementsByClassName('mobile_nav')[0].style.visibility = 'visible'
+    const element = document.querySelector('.mobile_nav');
+    element.classList.add('animate__animated', 'animate__bounceIn');
   }
 }
 
@@ -35,6 +47,7 @@ function myFunction() {
     
 </head>
 <body>
+
 
     <div class="container" onclick="myFunction()">
         <div class="bar1"></div>
@@ -61,7 +74,7 @@ function myFunction() {
                     <a href="#education">Education</a>
                 </li>
                 <li onclick="myFunction()">
-                    <a href="#portfolio">Projects</a>
+                    <a href="#projects">Projects</a>
                 </li>
                 <li onclick="myFunction()">
                     <a href="#contact">Contact</a>
@@ -93,7 +106,7 @@ function myFunction() {
                     <a href="#education">Education</a>
                 </li>
                 <li>
-                    <a href="#portfolio">Projects</a>
+                    <a href="#projects">Projects</a>
                 </li>
                 <li>
                     <a href="#contact">Contact</a>
@@ -156,39 +169,39 @@ function myFunction() {
             </div>
         </section>
 
-        <section id="skills">
+        <section id="skills" >
            <p>SKILLS</p>
-           <div class="skills-display">
+           <div class="skills-display" >
                
-               <div class="skill-progress">
+               <div class="skill-progress" data-aos="fade-down-right">
                    <div class="eighty-five">
                       <div class="skill-name">
                          <span>C++</span>
                       </div>
                    </div>
                </div>
-               <div class="skill-progress">
+               <div class="skill-progress" data-aos="fade-down-left">
                 <div class="ninty">
                    <div class="skill-name">
                       <span>Kotlin</span>
                    </div>
                 </div>
             </div>
-            <div class="skill-progress">
+            <div class="skill-progress" data-aos="fade-down-right">
                 <div class="fifty">
                    <div class="skill-name">
                       <span>Java</span>
                    </div>
                 </div>
             </div>
-            <div class="skill-progress">
+            <div class="skill-progress" data-aos="fade-down-left">
                 <div class="seventy-five">
                    <div class="skill-name">
                       <span>HTML</span>
                    </div>
                 </div>
             </div>
-            <div class="skill-progress">
+            <div class="skill-progress" data-aos="fade-down-right">
                 <div class="ninty">
                    <div class="skill-name">
                       <span>CSS</span>
@@ -196,7 +209,7 @@ function myFunction() {
                 </div>
             </div>
 
-            <div class="skill-progress">
+            <div class="skill-progress" data-aos="fade-down-left">
                 <div class="fifty">
                    <div class="skill-name">
                       <span>Android</span>
@@ -204,7 +217,7 @@ function myFunction() {
                 </div>
             </div>
 
-            <div class="skill-progress">
+            <div class="skill-progress" data-aos="fade-down-right">
                 <div class="ninty">
                    <div class="skill-name">
                       <span>JavaScript</span>
@@ -221,7 +234,7 @@ function myFunction() {
         <section id="experience">
             <p>WORK EXPERIENCE</p>
             <div id="exp">
-                <div class="exp_box">
+                <div class="exp_box" data-aos="fade-right" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="false">
                     
                         <!-- <img src="educat.jpg" id="image_wrk"> -->
                         <p id="designation">Android Developer</p>
@@ -233,7 +246,7 @@ function myFunction() {
                     
                    
                 </div>
-                <div class="exp_box">
+                <div class="exp_box" data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="false">
                     <!-- <div>
                         <img src="educat.jpg" id="image_wrk">
                     </div> -->
@@ -244,7 +257,7 @@ function myFunction() {
                         <p id="work">Completed 10+ successfull projects with 8-10 members in Google Developer Student Club and made live on PlayStore</p>
                     </div>
                 </div>
-                <div class="exp_box">
+                <div class="exp_box" data-aos="fade-right" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="false">
                     <!-- <div>
                         <img src="educat.jpg" id="image_wrk">
                     </div> -->
@@ -255,7 +268,7 @@ function myFunction() {
                         <p id="work">Started Working as a freelances for Android projects and web projects </p>
                     </div>
                 </div>
-                <div class="exp_box">
+                <div class="exp_box" data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="false">
                     <!-- <div>
                         <img src="educat.jpg" id="image_wrk">
                     </div> -->
@@ -269,8 +282,8 @@ function myFunction() {
 
                 
                 <div class="divider">
-                    <div class="plane">
-                        <i class="fa fa-plane" aria-hidden="true"></i>
+                    <div class="plane" >
+                        <i class="fa fa-plane"  data-aos="fade-up-right" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-once="false" aria-hidden="true"></i>
                     </div>
                 </div>
                 
@@ -282,7 +295,7 @@ function myFunction() {
         <section id="experience">
             <p>EDUCATION</p>
             <div id="exp">
-                <div class="exp_box">
+                <div class="exp_box" data-aos="fade-right" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="false">
                     
                         <!-- <img src="educat.jpg" id="image_wrk"> -->
                         <p id="designation">Xth</p>
@@ -291,7 +304,7 @@ function myFunction() {
                         <p id="work">CGPA: 8.6</p>
                    
                 </div>
-                <div class="exp_box">
+                <div class="exp_box" data-aos="fade-left" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="false">
                     <!-- <div>
                         <img src="educat.jpg" id="image_wrk">
                     </div> -->
@@ -302,7 +315,7 @@ function myFunction() {
                         <p id="work">Percentage: 79</p>
                    </div>
                 </div>
-                <div class="exp_box">
+                <div class="exp_box" data-aos="fade-right" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="false">
                     <!-- <div>
                         <img src="educat.jpg" id="image_wrk">
                     </div> -->
@@ -318,7 +331,7 @@ function myFunction() {
                 
                 <div class="divider">
                     <div class="plane">
-                        <i class="fa fa-car" style="transform: rotate(-135deg); margin-left: -5px;" aria-hidden="true"></i>
+                        <i class="fa fa-car" data-aos="fade-up-right" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-once="false" style="transform: rotate(-135deg); margin-left: -5px;" aria-hidden="true"></i>
                     </div>
                 </div>
                 
@@ -329,31 +342,31 @@ function myFunction() {
         <section id="projects">
             <p>PROJECTS</p>
             <div id="prj">
-                <div id="project_box">
+                <div id="project_box" data-aos="flip-right" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="false">
                     <p id="name">Hungreed(Android Project)</p>
                     <p id="status">August 2020 -September 2020</p>
                     <p id="content">This is the Sample Project for Food App. Using this app you can place your food order and list your favorite Restaurants</p>
                     <p id="link"></p>
                 </div>
-                <div id="project_box">
+                <div id="project_box" data-aos="flip-left" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="false">
                     <p id="name">Flow(Android Project)</p>
                     <p id="status">March 2021 - Present</p>
                     <p id="content">Chat Application</p>
                     <p id="link"></p>
                 </div>
-                <div id="project_box">
+                <div id="project_box" data-aos="flip-right" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="false">
                     <p id="name">ExplorIndia(Web Project)</p>
                     <p id="status">September 2020 - Septemeber 2020</p>
                     <p id="content">Sample Web Project of ministry of tours and travels in india</p>
                     <p id="link"></p>
                 </div>
-                <div id="project_box">
+                <div id="project_box" data-aos="flip-left" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="false">
                     <p id="name">Bank Management(C/C++ Project)</p>
                     <p id="status">November 2019 -December 2019</p>
                     <p id="content">Bank Management System made using C and C++. This is my first project</p>
                     <p id="link"></p>
                 </div>
-                <div id="project_box">
+                <div id="project_box" data-aos="flip-right" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="false">
                     <p id="name">Resume(Web Project)</p>
                     <p id="status">August 2021 - August 2021</p>
                     <p id="content">Portfolio Website</p>
@@ -396,6 +409,13 @@ function myFunction() {
         </section>
 
     </main>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
 
 </body>
 </html>
